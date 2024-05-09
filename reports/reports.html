@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+      /* Additional styling */
+      .chart-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+      }
+      /* Add spacing between columns */
+      .column-spacer {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body class="fade-in bg-light">
+    <nav class="navbar navbar-expand-lg bg-primary bg-opacity-75">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          <img src="../img/PI_logo (1).png" alt="Logo" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center mx-3 text-white"
+                href="../overview/overview.html"
+                id="overviewLink"
+                ><i class="lni lni-grid-alt me-1"></i>Overview</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center mx-3 text-white"
+                href="../team/team.html"
+                id="teamLink"
+                ><i class="lni lni-users me-1"></i>Team</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center mx-3 text-white"
+                href="../projects/projects.html"
+                id="projectsLink"
+                ><i class="lni lni-folder me-1"></i>Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center mx-3 text-white"
+                href="./reports.html"
+                id="attendanceLink"
+                ><i class="lni lni-stats-up me-1"></i>Reports</a
+              >
+            </li>
+          </ul>
+          <div
+            class="navbar-nav ms-auto d-flex align-items-center justify-content-center"
+          >
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                id="userDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i
+                  class="lni lni-user mx-3 border border-2 p-2 rounded-circle"
+                  style="color: #fff"
+                >
+                </i>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="userDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center"
+                    href="../login/login.html"
+                    ><p class="mb-0">Log out</p>
+                    <i class="lni lni-exit text-dark"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row g-3 my-3">
+        <!-- Column 1: Progress bars for monthly revenue -->
+        <div class="col-md-6">
+          <div class="rounded p-5" style="background-color: #fff">
+            <h2>Monthly Revenue</h2>
+            <div id="revenue-progress-bars"></div>
+          </div>
+        </div>
+        <!-- Column 2: Pie chart for task completion rates -->
+        <div class="col-md-6">
+          <div class="rounded p-5" style="background-color: #fff">
+            <h2>Task Completion Rates</h2>
+            <div class="chart-container">
+              <canvas id="completion-chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="../main.js"></script>
+    <script src="reports.js"></script>
+  </body>
+</html>

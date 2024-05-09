@@ -1,0 +1,39 @@
+/* log in dropdown */
+.dropdown-toggle::after {
+  display: none;
+}
+
+.event-column {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/*model width */
+.modal-dialog {
+  max-width: 400px;
+}
+
+/* Center the form */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 600px) {
+  .center {
+    width: 90%;
+  }
+}
+
+/* CSS  for loading animation*/
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}

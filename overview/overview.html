@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../style.css" />
+    <title>Overview</title>
+  </head>
+  <body class="fade-in">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-danger"
+      style="background: #e3f2fd"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../img/PI_logo (1).png" alt="Logo" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center mx-3 text-light"
+                href="./overview.html"
+                id="overviewLink"
+                ><i class="lni lni-grid-alt me-1"></i>Overview</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center mx-3 text-light"
+                href="../team/team.html"
+                id="teamLink"
+                ><i class="lni lni-users me-1"></i>Team</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center mx-3 text-light"
+                href="../projects/projects.html"
+                id="projectsLink"
+                ><i class="lni lni-folder me-1"></i>Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center mx-3 text-light"
+                href="../reports/reports.html"
+                id="attendanceLink"
+                ><i class="lni lni-stats-up me-1"></i>Reports</a
+              >
+            </li>
+          </ul>
+          <div
+            class="navbar-nav ms-auto d-flex align-items-center justify-content-center"
+          >
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                id="userDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i
+                  class="lni lni-user mx-3 border border-2 p-2 rounded-circle"
+                  style="color: #fff"
+                >
+                </i>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="userDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center"
+                    href="../login/login.html"
+                    ><p class="mb-0">Log out</p>
+                    <i class="lni lni-exit text-dark"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row g-3 my-3">
+        <div class="col-md-4">
+          <div
+            style="background-color: lightblue; height: 100px"
+            class="rounded p-3 d-flex align-items-center justify-content-between"
+          >
+            <div class="">
+              <h5>Number of Leads</h5>
+              <h2>5</h2>
+            </div>
+            <i
+              class="lni lni-direction rounded-circle p-3 text-dark"
+              style="background-color: #fff; font-size: 22px"
+            ></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            style="background-color: lightcoral; height: 100px"
+            class="rounded p-3 d-flex align-items-center justify-content-between"
+          >
+            <div class="">
+              <h5>Number of Contacts</h5>
+              <h2>15</h2>
+            </div>
+            <i
+              class="lni lni-coral rounded-circle p-3 text-dark"
+              style="background-color: #fff; font-size: 22px"
+            ></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            style="background-color: lightgreen; height: 100px"
+            class="rounded p-3 d-flex align-items-center justify-content-between"
+          >
+            <div class="">
+              <h5>Number of Deals</h5>
+              <h2>8</h2>
+            </div>
+            <i
+              class="lni lni-revenue rounded-circle p-3 text-dark"
+              style="background-color: #fff; font-size: 22px"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 my-5">
+        <div class="col-md-4 rounded-4">
+          <h2>Upcoming Events</h2>
+          <div id="upcomingEvents" class="rounded bg-light p-3 mt-4"></div>
+        </div>
+        <div class="col-md-8 rounded-4">
+          <h2>Latest Activities</h2>
+          <div id="latestActivities" class="rounded bg-light p-3 mt-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="../main.js"></script>
+    <script src="overview.js"></script>
+  </body>
+</html>

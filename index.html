@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier Inc</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="fade-in">
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/PI_logo (1).png" alt="Logo" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item btn btn-outline-warning rounded px-3 py-0">
+                <a class="nav-link" href="./login/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="
+        background-image: url(./img/banner.jpg);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      "
+    >
+      <div
+        class="overlay"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.8);
+        "
+      ></div>
+      <div class="container text-center" style="position: relative; z-index: 3">
+        <h1 class="text-white">
+          Streamline Your Workforce Management Effortlessly
+        </h1>
+        <p class="lead text-white">
+          Save time, improve efficiency, and enhance communication with our
+          employee management system.
+        </p>
+        <a href="#" class="btn btn-warning btn-lg">Get Started</a>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="features py-5 bg-light" style="height: 80%">
+      <div class="container">
+        <h1>Features</h1>
+        <p class="mb-5">
+          Empower Your Team, Simplify Your Processes, and Maximize Productivity
+          with Cutting-Edge Technology
+        </p>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div
+              class="rounded-4 border p-3 mb-4"
+              style="height: 200px; background: #fff"
+            >
+              <h2>Time Tracking</h2>
+              <p>
+                Effortlessly track employee working hours and monitor
+                productivity.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="rounded-4 border p-3 mb-4"
+              style="height: 200px; background: #fff"
+            >
+              <h2>Attendance Management</h2>
+              <p>
+                Manage employee attendance records and streamline attendance
+                tracking.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="rounded-4 border p-3 mb-4"
+              style="height: 200px; background: #fff"
+            >
+              <h2>Employee Scheduling</h2>
+              <p>
+                Create schedules easily and efficiently, ensuring optimal
+                workforce management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing py-5" style="height: 100%">
+      <div class="container">
+        <h2>Simple and Flexible Pricing</h2>
+        <p class="mb-5">
+          Unlock the full potential of our employee management system with our
+          straightforward pricing plans. <br />Choose the one that fits your
+          business needs and budget.
+        </p>
+
+        <div class="row text-center mt-5">
+          <!-- Free Plan -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Free</h3>
+                <p class="card-text">For small teams or startups</p>
+                <p class="price">$0<span>/month</span></p>
+                <ul class="list-group mb-3">
+                  <li class="list-group-item">Up to 10 employees</li>
+                  <li class="list-group-item">Basic features</li>
+                  <li class="list-group-item">Limited customer support</li>
+                </ul>
+                <a href="#" class="btn btn-warning border-4">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <!-- Pro Plan -->
+          <div class="col-md-4 mb-4">
+            <div class="card recommended">
+              <div class="card-body">
+                <h3 class="card-title">Pro</h3>
+                <p class="card-text">For medium to large-sized organizations</p>
+                <p class="price">$99<span>/month</span></p>
+                <ul class="list-group mb-3">
+                  <li class="list-group-item">Unlimited employees</li>
+                  <li class="list-group-item">Advanced features</li>
+                  <li class="list-group-item">Priority customer support</li>
+                </ul>
+                <a href="#" class="btn btn-warning border-4">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <!-- Enterprise Plan -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-text">For large enterprises and organizations</p>
+                <p class="price">Contact us for pricing</p>
+                <ul class="list-group mb-3">
+                  <li class="list-group-item">Custom features and solutions</li>
+                  <li class="list-group-item">
+                    24/7 dedicated customer support
+                  </li>
+                  <li class="list-group-item">
+                    On-site training and implementation
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-warning border-4">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section
+      class="testimonials"
+      style="
+        height: 75vh;
+        background: #c5c1c1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div class="container text-center" style="width: 80%">
+        <h2>Testimonials</h2>
+        <p>See what our previous customers think about us.</p>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="testimonial">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                leo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit ad ipsum voluptatem alias magni doloremque ipsa!
+                Temporibus harum quibusdam repudiandae?"
+              </p>
+              <h3 class="client">John Doe</h3>
+            </div>
+            <div class="carousel-item">
+              <p class="testimonial">
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptatum nam beatae possimus
+                facilis porro atque reiciendis recusandae pariatur."
+              </p>
+              <h3 class="client">Jane Smith</h3>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="contact pt-5"
+      style="background: #faef6ff9; height: 80vh"
+    >
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? We're here to help.</p>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button class="btn btn-dark text-warning" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h3>Contact Information</h3>
+            <ul class="list-unstyled">
+              <li>Email: info@PI.com</li>
+              <li>Phone: 123-456-7890</li>
+              <li>Address: 123 Street, Chattogram, Bangladesh</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer text-center bg-dark text-white py-3">
+      <p>&copy; 2024 Employee Management System. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
